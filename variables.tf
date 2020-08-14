@@ -126,6 +126,11 @@ variable "tracing_config" {
   default = null
 }
 
+variable "permissions_boundary" {
+  type        = string
+  description = "ARN of permissions boundary to apply to role"
+  default     = null 
+}
 
 variable "vpc_config" {
   type = object({
